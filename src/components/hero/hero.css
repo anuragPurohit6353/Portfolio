@@ -1,0 +1,135 @@
+.hero {
+    
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .image-containear{
+    position: absolute;
+    top: 100 px;
+    height: 100%;
+    bottom: 0px;
+    right: 15px;
+    /* object-fit: fill; */
+    
+ */
+.image-containear img {
+    /* position: absolute; */
+    width: 700px;
+    height: 700px;
+    mix-blend-mode: lighten;
+}
+.text-containear {
+   height: 90%;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 20px;
+}
+.text-containear h2 {
+    font-size: 80px;
+    color: rebeccapurple;
+    letter-spacing: 8px;
+}
+.text-containear h1 {
+    font-size: 100px;
+}
+.buttons button {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    z-index: 3;
+}
+.slidingTextContainear {
+   position: absolute;
+    font-size: 40vh;
+    left: 1000px;
+    white-space: nowrap;
+    color: #ffffff09;
+    rotate: 90deg;
+}
+
+
+
+@media (max-width : 1189px) {
+    .image-containear{
+        position: absolute;
+        top: unset;
+        height: 40%;
+        /* width: 100%; */
+        margin: auto;
+        bottom: 0px;
+        /* object-fit: fill; */
+    }
+    .image-containear img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: lighten;
+    }
+    .text-containear {
+        height: 60%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+     }
+     .text-containear h2 {
+        font-size: 50px;
+        color: rebeccapurple;
+        letter-spacing: 8px;
+    }
+    .text-containear h1 {
+        font-size: 88px;
+    }
+
+    }
+   
+
+    
+@media (max-width : 761px) {
+    .text-containear {
+        height: 60%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+     }
+
+    .text-containear h2 {
+        font-size: 40px;
+        color: rebeccapurple;
+        letter-spacing: 8px;
+    }
+    .text-containear h1 {
+        font-size: 70px;
+    }
+}
+
+
+
+
+

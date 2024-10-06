@@ -1,0 +1,56 @@
+.parallex {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg,#111132,#0c0c1d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallex h1 {
+   font-size: 100px;
+   z-index: 33;
+}
+
+.mountains{
+    background-image: url("/public/mountains.png");
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    z-index: 3;
+}
+
+.planents{
+    background-image: url("/public/planets.png");
+    width: 100%;
+    background-position: bottom;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.star {
+    background-image: url("/public/stars.png");
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+
+@media (max-width : 598px) {
+    .parallex h1 {
+        font-size: 60px;
+        z-index: 33;
+     }
+     .mountains{
+            background-size: contain;
+            background-repeat: no-repeat;
+    }
+     
+}

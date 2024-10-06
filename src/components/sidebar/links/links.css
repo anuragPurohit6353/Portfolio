@@ -1,0 +1,14 @@
+.links-side {
+    width: 400px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+}
+.link-side item {
+    font-size: 25px;
+    font-weight: 700;
+}

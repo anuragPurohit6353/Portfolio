@@ -1,0 +1,132 @@
+.portfolio {
+   position: relative;
+}
+
+
+.progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+    background: linear-gradient(180deg,#111132,#0c0c1d);
+    overflow: hidden;
+    z-index: 5;
+}
+.progressBar {
+        height: 5px;
+        background-color: white;
+        margin-top: 5px;
+}
+
+.containear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.containear img {
+    flex: 1;
+    height: 50%;
+    object-fit: cover;
+}
+
+.containear .textContainear {
+    flex: 1;
+}
+
+.containear .wrapper {
+    max-width: 1166px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containear .wrapper img {
+    flex: 1;
+    height: 50%;
+    object-fit: cover;
+}
+
+.containear .textContainear {
+    display: flex;
+     flex-direction: column;
+     gap: 30px;
+
+}
+
+.containear .textContainear h2 {
+    font-size: 35px;
+}
+
+.containear .textContainear p {
+    color: gray;
+    font-size: 20px;
+}
+
+.containear .textContainear button {
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+@media (max-width : 1186px) {
+    .containear .wrapper img {
+        flex: 1;
+        height: 30%;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .containear{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .containear .wrapper {
+        max-width: 1166px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .containear .textContainear {
+        margin: 20px;
+        margin-bottom: 50px;
+        display: flex;
+         flex-direction: column;
+         gap: 30px;
+         text-align: center;
+    
+    }
+    .containear .textContainear button {
+      
+           display: block; /* Makes the button a block element */
+            margin: 0 auto; /* Equal left and right margins */
+        
+    }
+}
+ 
+@media (max-width : 571px) {
+    .containear .wrapper img {
+        flex: 1;
+        height: 20%;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .progress {
+        font-size: 28px;
+    }
+}

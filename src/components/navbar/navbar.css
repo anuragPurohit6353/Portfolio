@@ -1,0 +1,104 @@
+@import "../../app.css";
+
+
+.navbar {
+    height: 100px;
+}
+
+.wrapper {
+    max-width: 1166px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.links {
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+}
+.links span:hover {
+    cursor: pointer;
+}
+
+.box1 img {
+    width: 25px;
+}
+.box1 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 32px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(91, 253, 102);
+    color: rgb(31, 31, 31);
+    height: 32px;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 15px;
+    
+}
+.box2 img {
+    width: 18px;
+}
+.wrapper span {
+    font-size: 20px;
+}
+
+.box1 h3 {
+    font-weight: 600;
+}
+.links button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    /* border: 1px solid white; */
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    z-index: 3;
+}
+ 
+ 
+/* .links img {
+    width: 25px;
+} */
+@media (max-width : 1200px) {
+    .wrapper span {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width : 844px) {
+        .box1 {
+            display: none;
+        }
+}
+@media (max-width : 1133px) {
+  
+  
+    .box2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* .navbar {
+        justify-content: space-around;
+        margin: 20px;
+    } */
+}
+
+
+
